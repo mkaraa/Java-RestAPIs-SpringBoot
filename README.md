@@ -33,3 +33,40 @@ To connect a postgresql database :
      ** Java 11 
      ** Spring Boot 2.7.4
      ** Postgresql
+
+
+## Example API Inputs
+#### 1- Crete new Citizen with Child (Optional)
+
+- URL: localhost:8081/citizens
+
+- Method: POST
+
+```
+{
+    "beingCitizen": true,
+    "name":"John",
+    "hasDrivingLicense": false,
+    "children":[ 
+        {"name":"Belinda"},
+	{"name":"Ramsey"}
+    ]
+}
+```
+
+#### 2- Find Citizen By Id (Children also exists as citizen)
+
+- URL: localhost:8081/citizens/findCitizensByCitizenId/:id
+
+- Method: GET
+
+
+#### 3- Get Citizen list who has driving license
+
+- URL: localhost:8081/citizens/hasDrivingLicense
+
+- Method: GET
+
+```
+true
+```
