@@ -1,0 +1,27 @@
+create database javadb;
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (1,false,true,'James');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (2,true,true,'Cris');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (3,false,true,'Martin');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (4,true,true,'Mariana');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (5,false,false,'Mary');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (6,false,true,'Wilson');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (7,true,false,'Calvin');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (8,false,true,'Luca');
+insert into citizens (citizen_id,is_citizen,has_driving_license,name) values (9,false,false,'Treo');
+
+insert into children(child_id,name,citizen_child_id) values (1, 'Belly', 1);
+insert into children(child_id,name,citizen_child_id) values (2, 'Ronaldo', 1);
+insert into children(child_id,name,citizen_child_id) values (3, 'Messi', 1);
+insert into children(child_id,name,citizen_child_id) values (4, 'Aguero', 2);
+insert into children(child_id,name,citizen_child_id) values (5, 'De Bruyne', 2);
+insert into children(child_id,name,citizen_child_id) values (6, 'Mahrez', 3);
+insert into children(child_id,name,citizen_child_id) values (7, 'Salah', 3);
+insert into children(child_id,name,citizen_child_id) values (8, 'Sane', 3);
+insert into children(child_id,name,citizen_child_id) values (9, 'Alison', 3);
+insert into children(child_id,name,citizen_child_id) values (10, 'Alioski', 4);
+insert into children(child_id,name,citizen_child_id) values (11, 'Neymar', 5);
+insert into children(child_id,name,citizen_child_id) values (12, 'Mbappe', 6);
+insert into children(child_id,name,citizen_child_id) values (13, 'Quaresma', 6);
+insert into children(child_id,name,citizen_child_id) values (14, 'Fernandes', 7);
+insert into children(child_id,name,citizen_child_id) values (15, 'Buffon', 8);
+insert into children(child_id,name,citizen_child_id) values (16, 'Mansour Behrami', 8);
